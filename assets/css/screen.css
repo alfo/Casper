@@ -788,6 +788,14 @@ body:not(.post-template) .post-title {
     text-decoration: underline;
 }
 
+.post-meta .comments {
+  display: inline-block;
+  margin-left: 8px;
+  padding-left: 12px;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
@@ -1782,3 +1790,34 @@ body:not(.post-template) .post-title {
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+
+ /* ==========================================================================
+ 13. Disqus (you can't tell me what to do)
+ ========================================================================== */
+
+ .disqus {
+   margin-top: 6rem;
+ }
+
+ .disqus_load {
+   height: 6rem;
+   max-width: 780px;
+   width: 100%;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+   color: #7F7F7F;
+   font-size: 1.4rem;
+   border-radius: 4px;
+   border: 2px solid #ddd;
+   transition: border ease 0.3s;
+   margin: 0 0 5rem;
+   padding: 0;
+   background: none;
+   transition: background-color ease-in 0.3s, border-color ease-out 0.4s, color ease-out 0.4s;
+ }
+
+ .disqus_load:hover {
+   border-color: #7F7F7F;
+   color: #000;
+ }
